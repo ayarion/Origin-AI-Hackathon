@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f1e8" />
+    <title>手続きレシート | あなたに関係する情報だけ</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand" aria-label="手続きレシート">
+          <span class="brand-mark">手</span>
+          <span>
+            <strong>手続きレシート</strong>
+            <small>PERSONAL BRIEF</small>
+          </span>
+        </div>
+        <div class="topbar-actions">
+          <span class="date-label">2026年9月23日（水）</span>
+          <button class="icon-button" id="profileButton" type="button" aria-label="プロフィールを開く">♙</button>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <section class="hero-row">
+          <div>
+            <p class="eyebrow">GOOD MORNING, <span id="userGreeting">あおいさん</span></p>
+            <h1>今日のレシート</h1>
+            <p class="hero-copy">あなたに関係する情報だけを、<br class="mobile-only" />今日やる順にまとめました。</p>
+          </div>
+          <div class="receipt-stamp" aria-label="今日の情報は4件">
+            <span>今日の情報</span>
+            <strong>04</strong>
+            <small>件</small>
+          </div>
+        </section>
+
+        <section class="summary-strip" aria-label="今月のサマリー">
+          <div class="summary-item">
+            <span class="summary-icon mint">¥</span>
+            <div><small>受け取れる可能性</small><strong>¥48,000</strong></div>
+          </div>
+          <div class="summary-item">
+            <span class="summary-icon coral">!</span>
+            <div><small>7日以内の期限</small><strong>1件</strong></div>
+          </div>
+          <div class="summary-item">
+            <span class="summary-icon navy">✓</span>
+            <div><small>今月完了した手続き</small><strong>2件</strong></div>
+          </div>
+        </section>
+
+        <section class="receipt-paper" aria-label="今日のレシート一覧">
+          <div class="receipt-top"></div>
+          <div class="receipt-inner">
+            <div class="receipt-meta">
+              <span>DAILY RECEIPT / 09.23</span>
+              <span>NO. 00241</span>
+            </div>
+            <div class="receipt-rule"></div>
+
+            <div class="section-heading action-heading">
+              <div><span class="section-tag">01</span><h2>ACTION <small>今日やること</small></h2></div>
+              <span class="section-count">1件</span>
+            </div>
+            <article class="receipt-card urgent-card" data-article="scholarship">
+              <div class="card-source-row">
+                <span class="source-pill university">大学</span>
+                <span class="card-time">締切まで 6日</span>
+              </div>
+              <h3>後期授業料減免の申請受付が始まりました</h3>
+              <p>家計基準に該当する学生は、後期授業料の一部が減免される可能性があります。</p>
+              <div class="card-footer">
+                <span class="money-label">最大 ¥48,000 / 学期</span>
+                <button class="text-button open-detail" type="button">詳細を見る <span>→</span></button>
+              </div>
+            </article>
+
+            <div class="section-heading news-heading">
+              <div><span class="section-tag">02</span><h2>NEWS <small>自分に関係する変化</small></h2></div>
+              <span class="section-count">1件</span>
+            </div>
+            <article class="receipt-card compact-card" data-article="city">
+              <div class="card-source-row">
+                <span class="source-pill city">自治体</span>
+                <span class="relevance-label">あなたに届いた理由</span>
+              </div>
+              <h3>10月から、若者向け家賃補助の対象地域が広がります</h3>
+              <p>現在登録されている住所が、拡大後の対象地域に含まれます。</p>
+              <div class="card-footer">
+                <span class="verified-label">✓ 公式情報を確認済み</span>
+                <button class="text-button open-detail" type="button">詳細を見る <span>→</span></button>
+              </div>
+            </article>
+
+            <div class="section-heading chance-heading">
+              <div><span class="section-tag">03</span><h2>CHANCE <small>使える機会</small></h2></div>
+              <span class="section-count">2件</span>
+            </div>
+            <div class="chance-grid">
+              <article class="receipt-card chance-card" data-article="internship">
+                <span class="source-pill company">勤務先</span>
+                <h3>秋のスキルアップ講座</h3>
+                <p>受講料の全額補助。申込は9/30まで。</p>
+                <button class="text-button open-detail" type="button">内容を見る <span>→</span></button>
+              </article>
+              <article class="receipt-card chance-card" data-article="event">
+                <span class="source-pill city">自治体</span>
+                <h3>地域の防災ワークショップ</h3>
+                <p>一人暮らしの方向け。参加費無料。</p>
+                <button class="text-button open-detail" type="button">内容を見る <span>→</span></button>
+              </article>
+            </div>
+
+            <div class="receipt-bottom-note">
+              <span class="tiny-check">✓</span>
+              <span>今日は、あなたに必要な情報だけです。</span>
+            </div>
+          </div>
+          <div class="receipt-bottom"></div>
+        </section>
+
+        <section class="scan-callout">
+          <div class="scan-illustration" aria-hidden="true"><span>＋</span><i></i><i></i><i></i></div>
+          <div>
+            <p class="eyebrow">PAPER → PROCEDURE</p>
+            <h2>紙の案内も、手続きに変える</h2>
+            <p>チラシや通知を撮影すると、期限・必要書類・次の行動を整理します。</p>
+          </div>
+          <button class="primary-button" id="scanButton" type="button"><span>▣</span> 案内を読み取る</button>
+          <input id="fileInput" type="file" accept="image/*" hidden />
+        </section>
+      </main>
+
+      <nav class="bottom-nav" aria-label="メインナビゲーション">
+        <button class="nav-item active" type="button" data-view="receipt"><span>▤</span><small>レシート</small></button>
+        <button class="nav-item" type="button" data-view="procedures"><span>□</span><small>手続き <b>1</b></small></button>
+        <button class="nav-item" type="button" data-view="settings"><span>⚙</span><small>設定</small></button>
+      </nav>
+    </div>
+
+    <div class="modal-backdrop" id="detailModal" hidden>
+      <section class="modal detail-modal" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+        <button class="modal-close" type="button" data-close-modal aria-label="閉じる">×</button>
+        <div class="modal-scroll">
+          <div class="modal-kicker" id="detailCategory">ACTION / 大学</div>
+          <h2 id="detailTitle">後期授業料減免の申請受付が始まりました</h2>
+          <p class="modal-lead" id="detailLead">家計基準に該当する学生は、後期授業料の一部が減免される可能性があります。</p>
+          <div class="why-box"><strong>なぜ自分に届いた？</strong><p id="detailWhy">「大学生」「一人暮らし」「今年度の収入情報」に該当するためです。</p></div>
+          <div class="detail-facts" id="detailFacts"></div>
+          <div class="source-box"><span>出典</span><strong id="detailSource">〇〇大学 学生支援課</strong><small id="detailVerified">最終確認：2026年9月23日</small></div>
+          <button class="primary-button full-width" id="detailAction" type="button">手続きに追加する <span>→</span></button>
+        </div>
+      </section>
+    </div>
+
+    <div class="modal-backdrop" id="scanModal" hidden>
+      <section class="modal scan-modal" role="dialog" aria-modal="true" aria-labelledby="scanTitle">
+        <button class="modal-close" type="button" data-close-modal aria-label="閉じる">×</button>
+        <div class="modal-scroll">
+          <div class="scan-stage" id="scanStage">
+            <div class="scan-camera"><span>▣</span><i></i></div>
+            <p class="eyebrow">SCAN YOUR PAPER</p>
+            <h2 id="scanTitle">案内を読み取る</h2>
+            <p>紙の案内をカメラで撮影、または画像を選択してください。</p>
+            <button class="outline-button" id="chooseFileButton" type="button">画像を選択する</button>
+            <button class="sample-button" id="sampleScanButton" type="button">サンプルで試す</button>
+            <p class="privacy-note">画像は手続きの整理にのみ使われます。</p>
+          </div>
+          <div class="scan-result" id="scanResult" hidden>
+            <div class="result-check">✓</div>
+            <p class="eyebrow">読み取り完了</p>
+            <h2>手続きとして整理しました</h2>
+            <div class="extracted-paper">
+              <span class="source-pill city">自治体</span>
+              <h3>国民健康保険料の納付案内</h3>
+              <div class="extracted-row"><span>支払期限</span><strong>2026年10月2日</strong></div>
+              <div class="extracted-row"><span>次の行動</span><strong>納付書を持ってコンビニへ</strong></div>
+              <div class="extracted-row"><span>必要なもの</span><strong>納付書・現金またはカード</strong></div>
+            </div>
+            <div class="reminder-row"><span>期限前に知らせる</span><select id="reminderSelect"><option>3日前</option><option>1週間前</option><option>前日</option></select></div>
+            <button class="primary-button full-width" id="registerProcedureButton" type="button">手続きに登録する <span>→</span></button>
+          </div>
+          <div class="registered-result" id="registeredResult" hidden>
+            <div class="result-check">✓</div>
+            <p class="eyebrow">登録しました</p>
+            <h2>期限を忘れないようにします。</h2>
+            <p>10月2日の3日前にお知らせします。手続き一覧から、いつでも内容を確認できます。</p>
+            <button class="outline-button full-width" data-close-modal type="button">閉じる</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="modal-backdrop" id="profileModal" hidden>
+      <section class="modal profile-modal" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
+        <button class="modal-close" type="button" data-close-modal aria-label="閉じる">×</button>
+        <div class="modal-scroll">
+          <p class="eyebrow">YOUR PROFILE</p>
+          <h2 id="profileTitle">あなた向けに整える</h2>
+          <p class="modal-lead">登録した情報をもとに、あなたに関係する制度や案内だけを選びます。</p>
+          <label class="field-label" for="nameInput">呼び名</label>
+          <input class="profile-input" id="nameInput" value="あおい" />
+          <p class="field-label">あなたについて</p>
+          <div class="profile-chips" id="profileChips">
+            <button class="profile-chip selected" type="button">大学生</button>
+            <button class="profile-chip selected" type="button">一人暮らし</button>
+            <button class="profile-chip selected" type="button">会社員</button>
+            <button class="profile-chip" type="button">子育て中</button>
+            <button class="profile-chip" type="button">引っ越し予定</button>
+          </div>
+          <button class="primary-button full-width profile-save" id="saveProfileButton" type="button">プロフィールを保存する <span>→</span></button>
+          <p class="profile-footnote">いつでも設定から変更できます。</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="modal-backdrop" id="proceduresModal" hidden>
+      <section class="modal procedures-modal" role="dialog" aria-modal="true" aria-labelledby="proceduresTitle">
+        <button class="modal-close" type="button" data-close-modal aria-label="閉じる">×</button>
+        <div class="modal-scroll">
+          <p class="eyebrow">YOUR PROCEDURES</p>
+          <h2 id="proceduresTitle">手続き一覧</h2>
+          <p class="modal-lead">期限と次の行動を、ここでまとめて確認できます。</p>
+          <div class="procedure-list">
+            <article class="procedure-item done">
+              <span class="procedure-status">✓</span>
+              <div><strong>後期授業料減免の申請</strong><small>9月29日まで · 大学</small></div>
+              <span class="done-label">完了</span>
+            </article>
+            <article class="procedure-item" id="insuranceProcedure">
+              <span class="procedure-status">!</span>
+              <div><strong>国民健康保険料の納付</strong><small>10月2日まで · 自治体</small></div>
+              <button class="complete-button" id="completeProcedureButton" type="button">完了にする</button>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="toast" id="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
